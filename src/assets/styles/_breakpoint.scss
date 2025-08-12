@@ -1,0 +1,28 @@
+@use 'sass:map';
+
+$breakpoints: (
+  'desktop': (
+    'base': 1024px,
+    'medium': 1180px,
+    'wide': 1550px,
+  ),
+  'mobile': (
+    'base': 320px,
+    'medium': 400px,
+    'wide': 480px,
+  ),
+  'tablet': (
+    'base': 695px,
+    'medium': 825px,
+    'wide': 910px,
+  ),
+);
+
+@mixin breakpoint($key, $type: 'base') {
+  $map: map.get($breakpoints, $key);
+  $width: map.get($map, $type);
+
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}

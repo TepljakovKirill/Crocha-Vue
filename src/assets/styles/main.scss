@@ -1,0 +1,209 @@
+@use './_color.scss';
+@use './_breakpoint.scss';
+
+@font-face {
+  font-family: 'BebasNeue';
+  src:
+    local('BebasNeue'),
+    local('BebasNeue-Bold'),
+    url('@fonts/bebas/BebasNeue-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BebasNeue';
+  src:
+    local('BebasNeue'),
+    local('BebasNeue-Regular'),
+    url('@fonts/bebas/BebasNeue-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src:
+    local('Inter'),
+    local('Inter-Regular'),
+    url('@fonts/inter/Inter-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src:
+    local('Montserrat'),
+    local('Montserrat-Regular'),
+    url('@fonts/montserrat/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src:
+    local('Montserrat-Bold'),
+    local('Montserrat-Medium'),
+    url('@fonts/montserrat/Montserrat-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src:
+    local('Montserrat-Bold'),
+    local('Montserrat-Bold'),
+    url('@fonts/montserrat/Montserrat-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TimesNewRoman';
+  src:
+    local('Times New Roman'),
+    local('Times New Roman Regular'),
+    local('Times-New-Roman'),
+    local('Times-New-Roman-Regular'),
+    url('@fonts/timesnew/Times-New-Roman-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+.wrapper {
+  width: 1248px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+// main {
+//   margin-bottom: auto;
+// }
+
+// .container {
+//   position: relative;
+//   display: flex;
+//   flex-direction: column;
+//   width: 100%;
+//   max-width: 1180px;
+//   margin: 0 auto;
+//   padding: 0 12px;
+//   min-height: 100vh;
+
+//   @include breakpoint('mobile', 'wide') {
+//     padding: 0 20px;
+//   }
+
+//   @include breakpoint('tablet') {
+//     padding: 0 25px;
+//   }
+
+//   @include breakpoint('desktop', 'base') {
+//     padding: 0 40px;
+//   }
+
+//   @include breakpoint('desktop', 'wide') {
+//     padding: 0;
+//   }
+// }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  text-decoration: none;
+}
+
+// a {
+//   color: color('text', 'main');
+//   text-decoration: none;
+// }
+
+// button {
+//   background: none;
+//   border: none;
+//   font-family: 'Montserrat';
+//   outline: none;
+//   padding: 0;
+//   cursor: pointer;
+// }
+// input::-ms-clear {
+//   display: none;
+// }
+// input,
+// select {
+//   font-family: 'Montserrat';
+//   outline: 0;
+//   background-color: transparent;
+//   color: inherit;
+//   border: none;
+// }
+// input:focus,
+// input:active,
+// button:focus,
+// button:active {
+//   outline: none;
+// }
+// textarea,
+// input[type='text'],
+// input[type='button'],
+// input[type='submit'] {
+//   appearance: none;
+//   border-radius: 0;
+// }
+
+// ul {
+//   list-style-type: unset;
+//   margin-block-start: unset;
+//   margin-block-end: unset;
+//   margin-inline-start: unset;
+//   margin-inline-end: unset;
+//   padding-inline-start: unset;
+//   unicode-bidi: unset;
+// }
+
+// li {
+//   list-style-type: none;
+// }
+
+// .no-scroll {
+//   overflow: hidden;
+
+//   @include breakpoint('desktop', 'medium') {
+//     margin-right: 17px;
+//   }
+// }
+
+// input[type='number'] {
+//   -moz-appearance: textfield;
+// }
+
+// input::-webkit-outer-spin-button,
+// input::-webkit-inner-spin-button {
+//   -webkit-appearance: none;
+// }
