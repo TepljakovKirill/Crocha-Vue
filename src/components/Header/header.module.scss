@@ -1,5 +1,37 @@
 .header {
   width: 100%;
-  height: 91px;
   background-color: var(--bg-blue-color);
 }
+
+.container {
+  height: 91px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .menu {
+    display: flex;
+
+    &__list:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    &__link {
+      font-family: 'Montserrat-Bold';
+      color: var(--text-white-color);
+      transition: 0.2s ease-in;
+    }
+
+     &__link:hover {
+      color: var(--link-hover--color);
+      transition: 0.2s ease-in;
+    }
+  }
+
+  .cartIcon:hover {
+    fill: red;
+  }
+
+}
+
+

@@ -2,73 +2,21 @@
 @use './_breakpoint.scss';
 
 @font-face {
-  font-family: 'BebasNeue';
+  font-family: 'Montserrat-Bold';
   src:
-    local('BebasNeue'),
-    local('BebasNeue-Bold'),
-    url('@fonts/bebas/BebasNeue-Bold.ttf') format('truetype');
+    local('Montserrat-Bold'),
+    url('/src/assets/fonts/Montserrat-Bold.woff2') format('woff2'),
+    url('/src/assets/fonts/Montserrat-Bold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'BebasNeue';
+  font-family: 'Montserrat-Regular';
   src:
-    local('BebasNeue'),
-    local('BebasNeue-Regular'),
-    url('@fonts/bebas/BebasNeue-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Inter';
-  src:
-    local('Inter'),
-    local('Inter-Regular'),
-    url('@fonts/inter/Inter-Regular.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  src:
-    local('Montserrat'),
     local('Montserrat-Regular'),
-    url('@fonts/montserrat/Montserrat-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  src:
-    local('Montserrat-Bold'),
-    local('Montserrat-Medium'),
-    url('@fonts/montserrat/Montserrat-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  src:
-    local('Montserrat-Bold'),
-    local('Montserrat-Bold'),
-    url('@fonts/montserrat/Montserrat-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'TimesNewRoman';
-  src:
-    local('Times New Roman'),
-    local('Times New Roman Regular'),
-    local('Times-New-Roman'),
-    local('Times-New-Roman-Regular'),
-    url('@fonts/timesnew/Times-New-Roman-Regular.ttf') format('truetype');
+    url('/src/assets/fonts/Montserrat-Regular.woff2') format('woff2'),
+    url('/src/assets/fonts/Montserrat-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }
@@ -84,8 +32,9 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat-Regular';
   font-size: 16px;
+  color: var(--text-white-color);
   line-height: 1.5;
   margin: 0;
   overflow-x: hidden;
@@ -96,6 +45,10 @@ body {
   width: 1248px;
   padding: 0 10px;
   margin: 0 auto;
+}
+
+.flex {
+  display: flex;
 }
 
 // main {
@@ -139,10 +92,9 @@ h6 {
   text-decoration: none;
 }
 
-// a {
-//   color: color('text', 'main');
-//   text-decoration: none;
-// }
+a {
+  text-decoration: none;
+}
 
 // button {
 //   background: none;
@@ -177,19 +129,19 @@ h6 {
 //   border-radius: 0;
 // }
 
-// ul {
-//   list-style-type: unset;
-//   margin-block-start: unset;
-//   margin-block-end: unset;
-//   margin-inline-start: unset;
-//   margin-inline-end: unset;
-//   padding-inline-start: unset;
-//   unicode-bidi: unset;
-// }
+ul {
+  list-style-type: unset;
+  margin-block-start: unset;
+  margin-block-end: unset;
+  margin-inline-start: unset;
+  margin-inline-end: unset;
+  padding-inline-start: unset;
+  unicode-bidi: unset;
+}
 
-// li {
-//   list-style-type: none;
-// }
+li {
+  list-style-type: none;
+}
 
 // .no-scroll {
 //   overflow: hidden;
