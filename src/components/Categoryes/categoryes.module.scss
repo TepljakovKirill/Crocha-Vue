@@ -1,0 +1,17 @@
+.container {
+  max-width: 942px;
+  margin: 0 auto;
+
+  .categoryes__list {
+    margin: 42px 0;
+    display: flex;
+    justify-content: space-between;
+
+    .categoryes__link {
+      color: var(--link-categories--color);
+    }
+  }
+}
+
+
+
