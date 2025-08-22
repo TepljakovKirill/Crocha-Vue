@@ -50,6 +50,17 @@ body {
   display: flex;
 }
 
+.border {
+  border-radius: 30px;
+  border: 1px solid var(--border--color);
+}
+
+.title-section {
+  font-family: 'Montserrat-Bold';
+  font-size: 24px;
+  color: var(--text-grey--color);
+}
+
 // main {
 //   margin-bottom: auto;
 // }
