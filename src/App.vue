@@ -1,6 +1,7 @@
 <script setup>
 import Header from './components/Header/Header.vue'
 import Categoryes from './components/Categoryes/Categoryes.vue';
+import Slider from './components/Slider/Slider.vue';
 </script>
 
 <template>
@@ -8,6 +9,7 @@ import Categoryes from './components/Categoryes/Categoryes.vue';
 
   <main>
     <Categoryes />
+    <Slider />
   </main>
 </template>
 

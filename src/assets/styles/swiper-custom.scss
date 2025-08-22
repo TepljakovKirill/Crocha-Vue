@@ -1,0 +1,26 @@
+
+  .swiper {
+  &-pagination {
+    bottom: 35px !important;
+
+    &-bullet {
+      width: 29px;
+      height: 3px;
+      background: var(--bg-bullet--color);
+      margin: 0 4px;
+      border-radius: 0;
+      transition: all 0.3s ease;
+      margin: 0 8px;
+      opacity: 1;
+      transform: none;
+
+      &-active {
+        width: 29px;
+        height: 3px;
+        background: var(--bg-bullet-active--color);
+      }
+
+    }
+  }
+}
+
