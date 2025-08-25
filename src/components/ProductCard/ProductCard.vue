@@ -1,6 +1,11 @@
 <script setup>
 import style from './productCard.module.scss'
 import image from '@/assets/images/card-1.jpg'
+import Button from '../UI/Button.vue';
+
+const handleClick = () => {
+  alert('Кнопка нажата!')
+}
 </script>
 
 <template>
@@ -13,8 +18,8 @@ import image from '@/assets/images/card-1.jpg'
         <span :class='style.price_old'>719 ₽</span>
       </div>
       <div :class="style.productCard_block_button">
-        <button :class="style.view_button">Смотреть</button>
-        <button :class="style.cart_button">В корзину</button>
+        <Button variant="blue" size="small" @click="handleClick">Смотреть</Button>
+        <Button variant="white" size="small" @click="handleClick">В корзину</Button>
       </div>
     </div>
   </div>
