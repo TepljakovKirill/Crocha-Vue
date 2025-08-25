@@ -3,12 +3,12 @@
 defineProps({
   variant: {
     type: String,
-    default: 'primary',
+    default: 'blue',
     validator: (value) => ['blue', 'white' ].includes(value)
   },
   size: {
     type: String,
-    default: 'medium',
+    default: 'small',
     validator: (value) => ['small', 'medium', 'large'].includes(value)
   },
   disabled: Boolean

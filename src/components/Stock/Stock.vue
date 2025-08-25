@@ -9,7 +9,9 @@ import ProductCard from '../ProductCard/ProductCard.vue';
         <div class="border">
           <div :class="style.stock_container">
             <h2 class='title-section'>Акции</h2>
-            <ProductCard />
+            <div :class="style.stock_wrapper">
+              <ProductCard />
+            </div>
           </div>
         </div>
       </div>
